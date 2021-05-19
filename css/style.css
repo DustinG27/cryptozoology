@@ -9,25 +9,22 @@ body {
 }
 
 .header {
-  
   background: linear-gradient(#494949, transparent 90%),
-                linear-gradient(0deg, #101010, transparent),
-				#000 url('bannerbackground-Orig.jpg') no-repeat center;
-	background-size: cover;
-    height:	600px;
-	padding: 20px;
-  
+    linear-gradient(0deg, #101010, transparent),
+    #000 url("bannerbackground-Orig.jpg") no-repeat center;
+  background-size: cover;
+  height: 600px;
+  padding: 20px;
 }
 
 h1 {
   text-align: center;
   text-shadow: 6px 6px 5px #101010, 0 0 5px #101010;
   color: #fff;
-	font-size: 3.75em;
-	letter-spacing: .4em;
-	line-height: .5em;
-	padding-top: 250px;
- 
+  font-size: 3.75em;
+  letter-spacing: 0.4em;
+  line-height: 0.5em;
+  padding-top: 250px;
 }
 
 h2 {
@@ -44,10 +41,32 @@ p {
   float: right;
 }
 
-img {
-  width:400px;
+.title {
+  font-family: "Times New Roman", Times, serif;
+  display: contents;
+  padding-bottom: 50px;
+  font-size: 20px;
+  text-decoration: underline !important;
+  text-shadow: 2px 2px 4px red, 0 0 5px red;
+}
+
+span {
+  margin-top: 20px;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.imageOne {
+  width: 400px;
   height: 300px;
   float: left;
+  border-radius: 10px;
+}
+
+.imageTwo {
+  width: 400px;
+  height: 300px;
+  float: right;
   border-radius: 10px;
 }
 
@@ -55,36 +74,51 @@ img {
   margin: 20px;
 }
 
+.row {
+  margin-top: 50px;
+}
 
 /* navigation bar */
 
-.navigation  {
-	background-color: rgba(0, 0, 0, .6);
-	color: #fff;
-	left: 0;
-	margin: 0;
-	overflow: hidden;
-	padding: 0;
-	position: fixed;
-	text-align: center;
-	top: 0;
-	width: 100%;
-	
+.navigation {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  left: 0;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
 }
 
-.navigation li  {
-	display: inline;
-	float: left;
+.navigation li {
+  display: inline;
+  float: left;
 }
 
-.navigation li a  {
-    color: white;
-	display: inline-block;
-    padding: 14px 16px;
-    text-decoration: none;
+.navigation li a {
+  color: white;
+  display: inline-block;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.navigation li a:hover  {
-	background-color: #494949;
+.navigation li a:hover {
+  background-color: #494949;
 }
 
+/* footer */
+
+.main-footer  {
+  background-color: rgba(0, 0, 0, 0.6);
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  margin: 40% 0 0;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
